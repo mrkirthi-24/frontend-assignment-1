@@ -1,34 +1,21 @@
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AddIcon from "@mui/icons-material/Add";
 import ReceiptIcon from "@mui/icons-material/Receipt";
-import styled from "@emotion/styled";
+import { InvoiceButton, StyledButton } from "../utils/StyledButtons";
 
 const LeftSide = () => {
-  const StyledButton = styled(Button)`
-    text-transform: none;
-    width: 100%;
-    color: #132d78;
-    font-size: 0.9rem;
-    padding: 0.5rem 0rem;
-    border-radius: 7px;
-  `;
-
   return (
     <Box p="20px 20px 0px 10px">
       <StyledButton
         variant="outlined"
         startIcon={<AddIcon />}
         endIcon={<KeyboardArrowDownIcon />}
-        sx={{
-          bgcolor: "#ffffff",
-          fontWeight: "bold",
-          boxShadow: "0px 2px 5px rgba(0,0,0,0.6)",
-        }}
+        sx={{ bgcolor: "#ffffff" }}
       >
         &nbsp; Create New &nbsp;
       </StyledButton>
-      <StyledButton
+      <InvoiceButton
         startIcon={<ReceiptIcon />}
         sx={{
           mt: "20px",
@@ -40,7 +27,7 @@ const LeftSide = () => {
         }}
       >
         &nbsp;Invoices
-      </StyledButton>
+      </InvoiceButton>
     </Box>
   );
 };
