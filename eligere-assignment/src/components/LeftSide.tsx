@@ -1,16 +1,16 @@
-import { Box } from "@mui/material";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { Box, Typography } from "@mui/material";
+import ArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AddIcon from "@mui/icons-material/Add";
 import ReceiptIcon from "@mui/icons-material/Receipt";
 import { InvoiceButton, StyledButton } from "../utils/StyledButtons";
 
 const LeftSide = () => {
   return (
-    <Box p="20px 20px 0px 10px">
+    <Box p="20px 20px 0px 10px" height="85vh">
       <StyledButton
         variant="outlined"
         startIcon={<AddIcon />}
-        endIcon={<KeyboardArrowDownIcon />}
+        endIcon={<ArrowDownIcon />}
         sx={{ bgcolor: "#ffffff" }}
       >
         &nbsp; Create New &nbsp;
@@ -20,7 +20,7 @@ const LeftSide = () => {
         sx={{
           mt: "20px",
           justifyContent: "start",
-          bgcolor: "rgba(0,0,0,0.1)",
+          bgcolor: "#d8e2f0",
           ".MuiButton-startIcon": {
             ml: "25px",
           },
@@ -28,6 +28,11 @@ const LeftSide = () => {
       >
         &nbsp;Invoices
       </InvoiceButton>
+      <Box position="absolute" bottom={5}>
+        <Typography color="grey" fontSize={12} ml={2.5}>
+          © 2023, 2024. LogoK Pvt. Ltd.
+        </Typography>
+      </Box>
     </Box>
   );
 };
