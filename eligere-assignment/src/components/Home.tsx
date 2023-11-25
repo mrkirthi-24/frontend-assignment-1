@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import LeftSide from "./LeftSIde";
+import LeftSide from "./LeftSide";
 import NavBar from "./NavBar";
 import RightSide from "./RightSide";
 
