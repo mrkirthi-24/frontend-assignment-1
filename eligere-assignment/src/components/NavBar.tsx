@@ -29,6 +29,7 @@ const NavBar = () => {
     font-size: 0.9rem;
     cursor: pointer;
     margin-right: 2rem;
+    text-decoration: none;
   `;
 
   return (
